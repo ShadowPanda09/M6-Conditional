@@ -13,21 +13,21 @@ let attempts = 0;
 // to guess again.
 
 while (true) 
-{
-    attempts ++;
-    if (userGuess == 999){
-        break;
-    } else if (userGuess < randomNumber){
-        window.alert("Too low!");
-    } else if (userGuess > randomNumber){
-        window.alert("Too high!");
-    } else if (userGuess == randomNumber) {
-        window.alert("You got the number! It only took you: " + attempts + " guesses");
-        break;
-    }  else {
-        window.alert3("Invalid Input")
-    }
-    userGuess = prompt("Guess a number between 1 and 10, or type 999 to exit");
+{   
+        attempts ++;
+        if (userGuess == 999){
+            break;
+        } else if (userGuess < randomNumber){
+            window.alert("Too low!");
+        } else if (userGuess > randomNumber){
+            window.alert("Too high!");
+        } else if (userGuess == randomNumber){
+            window.alert("You got the number! It only took you: " + attempts + " guesses");
+            break;
+        } else {
+            window.alert("Please enter a valid input")
+        }
+        userGuess = prompt("Guess a number between 1 and 10, or type 999 to exit");
 }
 // If the guess is correct, the user should be alerted of their win and 
 // be told the number of guesses they made.
