@@ -18,14 +18,14 @@ while (true)
         if (userGuess == 999){
             break;
         } else if (userGuess < randomNumber){
-            window.alert("Too low!");
+            console.log("Too low!");
         } else if (userGuess > randomNumber){
-            window.alert("Too high!");
+            console.log("Too high!");
         } else if (userGuess == randomNumber){
-            window.alert("You got the number! It only took you: " + attempts + " guesses");
+            console.log("You got the number! It only took you: " + attempts + " guesses");
             break;
         } else {
-            window.alert("Please enter a valid input")
+            console.log("Please enter a valid input")
         }
         userGuess = prompt("Guess a number between 1 and 10, or type 999 to exit");
 }
